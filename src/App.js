@@ -2,7 +2,6 @@ import "./App.css";
 import { Component } from "react";
 import CardList from "./components/card-list/card-list.component";
 import SearchBox from "./components/search-box/search-box.component";
-import Card from "./components/card/card";
 
 class App extends Component {
   constructor() {
@@ -48,7 +47,6 @@ class App extends Component {
           className="monsters-search-box"
         />
         <CardList monsters={filteredMonsters} />
-        <Card />
       </div>
     );
   }
