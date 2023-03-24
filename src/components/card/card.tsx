@@ -1,6 +1,19 @@
 import { Component } from "react";
 
-class Card extends Component {
+interface CardProps {
+  className? : string;
+  monster : MonsterProps;
+}
+
+interface MonsterProps {
+  id : string;
+  name : string;
+  email : string;
+}
+
+
+
+class Card extends Component<CardProps>{
   render() {
     const { id, name, email } = this.props.monster;
     return (
