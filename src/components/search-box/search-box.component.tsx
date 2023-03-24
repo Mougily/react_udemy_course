@@ -22,7 +22,7 @@ interface SearchBoxProps {
   className?: string;
   placeholder: string;
   onChangeHandler: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
+} // because the search box props are an object, we have to define it as an interface
 
 class SearchBox extends Component<SearchBoxProps> {
   render() {
