@@ -1,4 +1,5 @@
 import { Component } from "react";
+import './card.styles.css'
 
 interface CardProps {
   className? : string;
